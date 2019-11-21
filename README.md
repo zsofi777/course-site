@@ -1,1 +1,1 @@
-# https://github.com/zsofi777/course-site
+# https://zsofi777.github.io/course-site/
