@@ -2855,7 +2855,7 @@
 }
 .icon-close2:before {
   content: "\e5cd";
-  color: #CE3432;
+  color: black;
 }
 .icon-clear_all:before {
   content: "\e0b8";
@@ -3852,7 +3852,7 @@
 }
 .icon-menu:before {
   content: "\e5d2";
-  color: #242D9C;
+  color: white;
 }
 .icon-message:before {
   content: "\e0c9";
