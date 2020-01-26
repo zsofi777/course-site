@@ -88,7 +88,10 @@ h5#contactH5 {
 .portrait {
   height: auto;
   width: 10em;
-  padding-top: 40px;
+  margin-top: 40px;
+  border-radius: 10px;
+  padding-top: 0px;
+  box-shadow: 9px 9px 4px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 650px) {
@@ -108,25 +111,26 @@ a#btn1, a#btn2, a#btn3 {
 .grid-container {
   display: grid;
   place-items: center;
+  align-items: center;
+  justify-content: center;
   grid-template-areas: 
     ". contact"
     "portrait contact"
     ". contact";
   padding: 10px;
   grid-template-columns: 300px 600px;
-  margin-left: 30px;
   margin-top: 10%;
 }
-
+@media (max-width: 600px) {
+  .grid-container {
+    justify-content: initial;
+    margin-left: -25px;
+  }
+}
 @media (min-width: 601px) and (max-width: 800px) {
   .grid-container {
     grid-template-columns: 200px 500px;
-    margin-left: -20px;
-  }
-}
-@media (min-width: 801px) and (max-width: 1100px) {
-  .grid-container {
-    margin-left: -58px;
+    justify-content: initial;
   }
 }
 
@@ -142,7 +146,6 @@ a#btn1, a#btn2, a#btn3 {
       "portrait"
       "contact";
     grid-gap: 10px;
-    margin-left: -30px;
   }
   .portrait {
     padding-top: 20px;
